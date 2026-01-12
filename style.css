@@ -62,3 +62,26 @@ font-family: "Playfair", serif;
 .popular-section-img{
     padding-block: 4rem;
 }
+
+
+.img-dest{
+    height: 480px;
+    width: 386px;
+    position: relative;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100px;
+}
+.img-dest::before{
+    height: 100%;
+    border-radius: 100px;
+
+    width: 100%;
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+}
