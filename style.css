@@ -64,24 +64,169 @@ font-family: "Playfair", serif;
 }
 
 
-.img-dest{
-    height: 480px;
-    width: 386px;
-    position: relative;
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 100px;
+.img-journey{
+    
 }
-.img-dest::before{
-    height: 100%;
+.journey-img-rad{
     border-radius: 100px;
+    overflow: hidden;
+}
+/* -------------why us Index Section starts here */
+.why-us-index-section{
 
+    height: 90vh;
+    width: 100%;
+
+}
+.why-us-index-container{
+    height: 100%;
+    width: 100%;
+    background-image: url("assests/images/home-tour.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    position: relative;
+}
+
+.why-us-index-container::before{
+    height: 100%;
     width: 100%;
     content: "";
     position: absolute;
     background-color: rgba(0,0,0,0.4);
+
     top: 0;
     left: 0;
+}
+.why-us-index-content{
+    position: relative;
+    z-index: 3;
+
+}
+.box-craft{
+    height: 80vh;
+}
+/* -------------why us Index Section ends here */
+
+.top-review-section{
+    height: 100vh;
+    width: 100%;
+}
+.adventure-section{
+    height: auto;
+    width: 100%;
+    background-color: #fb5607;
+}
+.adventure-section-container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.Amazon_Forest{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 38, 38, 0.281);
+    bottom: 0px;
+    /* border-radius: 100px; */
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    
+}
+.adv-img{
+    position: absolute;
+    top: -142px;
+}
+/* ---------------------------------------------About Page-------------------------------------------------------- */
+
+
+.hero-section-about {
+    height: auto;
+    width: 100%;
+}
+
+.main-container-hero-section-about {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url('/assests/images/about-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.main-container-hero-section-about::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color:rgb(0,18,25,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.silver-bg-text{
+    background-color: #827767;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 50rem;
+}
+
+.svg-span{
+    background-color: #fff7ec;
+    /* color: #fb5607; */
+    border-radius: 20px;
+}
+.svg-span>svg{
+    fill: #fb5607;
+}
+.about-move-hero-container{
+    position: absolute;
+    border: 1px solid #d1d1d1;
+}
+
+
+
+@media(min-width:768px ) and (max-width:992px){
+
+    .bd-rad-100{
+    border-radius: 24px;
+}
+    
+    .journey-img-rad{
+        border-radius: 24px;
+    }
+}
+
+@media(max-width:576px ){
+
+    .heading-hero{
+        font-size: 1rem;
+    }
+
+    .index-hero-section-content{
+        padding: 0;
+    }
+    .journey-img-rad{
+        border-radius: 24px;
+        
+    }
+    .img-journey{
+        padding-bottom: 2rem;
+    }
+       .bd-rad-100{
+    border-radius: 24px;
+}
+    
+.adv-img{
+    position: relative;
+}
 }
