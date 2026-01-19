@@ -55,18 +55,23 @@ font-family: "Playfair", serif;
 
 
 }
-
+  .heading-hero{
+        font-size: 5rem;
+    }
+.main-container-hero-section-about>div>div>div>h1{
+    font-size: 3rem;
+}
 .bd-rad-100{
     border-radius: 100px 100px 100px 100px;
 }
 .popular-section-img{
     padding-block: 4rem;
 }
-
-
-.img-journey{
-    
+.popular-section-h1{
+    font-size: 4rem;
+    font-weight: 900;
 }
+
 .journey-img-rad{
     border-radius: 100px;
     overflow: hidden;
@@ -114,14 +119,25 @@ font-family: "Playfair", serif;
     width: 100%;
 }
 .adventure-section{
-    height: auto;
-    width: 100%;
+
     background-color: #fb5607;
 }
-.adventure-section-container{
+
+.adventure-section::before{
     height: 100%;
     width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url('assests/images/Travel-50.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-size: cover; */
 
+}
+
+.adventure-section-container{
     display: flex;
     position: absolute;
     align-items: center;
@@ -145,7 +161,7 @@ font-family: "Playfair", serif;
 }
 .adv-img{
     position: absolute;
-    top: -142px;
+    bottom: 0;
 }
 /* ---------------------------------------------About Page-------------------------------------------------------- */
 
@@ -173,13 +189,31 @@ font-family: "Playfair", serif;
     top: 0;
     left: 0;
 }
+.hero-about-content{
+    padding-block: 9rem;
+}
+.hero-about-content>div>h1{
+
+    font-size: 4rem;
+}
+
+ .about-travel-h1{
+    font-size: 3rem;
+    font-weight: 900;
+ }
 .silver-bg-text{
     background-color: #827767;
     padding-inline: 1rem;
     padding-block: 0.5rem;
     border-radius: 50rem;
 }
-
+.orange-bg-text{
+    background-color: #ffece1;
+    color: #fb5607;
+     padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 50rem;
+}
 .svg-span{
     background-color: #fff7ec;
     /* color: #fb5607; */
@@ -192,6 +226,167 @@ font-family: "Playfair", serif;
     position: absolute;
     border: 1px solid #d1d1d1;
 }
+
+.travel-personal-journey{
+    height: auto;
+    width: 100%;
+
+}
+.travel-personal-journey-container{
+    height: 100%;
+    width: 100%;
+    padding-block: 3rem;
+  padding-top: 13rem;
+  
+}
+.travel-personal-journey-heading{
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 4rem;
+}
+.travel-personal-journey-img{
+    position: absolute;
+    left: 27px;
+}
+.travel-personal-journey-img1{
+    position: absolute;
+    left: 52px;
+}
+
+
+
+.travel-enjoy-section{
+    height: auto;
+    width: 100%;
+    background-color: #FFF7EC;
+    padding-block: 4rem;
+}
+
+.img-box>img{
+
+    display: inline-block;
+}
+
+
+
+/* ------------------------------------------Packages Page--------------------------------- */
+
+
+
+
+.hero-section-packages {
+    height: auto;
+    width: 100%;
+}
+
+.main-container-hero-section-packages {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url('/assests/images/packages-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.main-container-hero-section-packages::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color:rgb(0,18,25,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hero-packages-content{
+    padding-block: 9rem;
+}
+
+ .packages-travel-h1{
+    font-size: 3rem;
+    font-weight: 900;
+ }
+
+
+.silver-bg-text-package{
+    background-color: rgba(105,115,132,0.6);
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+    border-radius: 50rem;
+}
+
+.packages-content-card{
+    position: relative;
+    top: -100px;
+}
+
+
+/* ------------------------------------------------Contact Page---------------------------------- */
+
+
+
+.hero-section-contact {
+    height: auto;
+    width: 100%;
+}
+
+.main-container-hero-section-contact {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url('/assests/images/contact-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.main-container-hero-section-contact::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color:rgb(0,18,25,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hero-contact-content{
+    padding-block: 7rem;
+}
+
+ .contact-travel-h1{
+    font-size: 3rem;
+    font-weight: 900;
+ }
+
+ .star-icon{
+    color: #fb5607;
+ }
+ .img-package-card{
+    border: 1px solid black;
+    border-left: none;
+ }
+
+.contact-page-bg-image{
+    background-image: url("./assests/images/explore.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.contact-page-bg-image::before{
+    height: 100%;
+    width: 100%;
+    content: "";
+border-radius: 100px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
 
 
 
@@ -208,8 +403,14 @@ font-family: "Playfair", serif;
 
 @media(max-width:576px ){
 
+    
+.popular-section-h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
     .heading-hero{
-        font-size: 1rem;
+        font-size: 2.8rem;
     }
 
     .index-hero-section-content{
@@ -219,6 +420,10 @@ font-family: "Playfair", serif;
         border-radius: 24px;
         
     }
+    
+.journey{
+ align-items: center;   
+}
     .img-journey{
         padding-bottom: 2rem;
     }
@@ -228,5 +433,61 @@ font-family: "Playfair", serif;
     
 .adv-img{
     position: relative;
+    bottom: 0;
+}
+.about-travel-h1{
+    font-size: 2rem;
+}
+.travel-enjoy-section-nowrap{
+    flex-wrap: wrap;
+}
+.main-container-hero-section-about>div>div>div>h1{
+    font-size: 2rem;
+}
+
+.travel-enjoy-section{
+    padding-block: 2rem;
+}
+.travel-personal-journey-heading{
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2rem;
+}
+
+.hero-about-content{
+    padding-bottom: 18rem;
+    padding-top: 3rem;
+}
+
+.hero-about-content>div>h1{
+
+    font-size: 2rem;
+}
+
+.adventure-section::before{
+    background-image: none;
+}
+.adv-h2{
+    text-align: center;
+}
+.footer-media{
+    align-items: center;
+}
+.header-h5{
+    font-size: 1rem;
+}
+.footer-media>h6{
+    text-align: center;
+}
+.contact-travel-h1{
+    font-size: 1.5rem;
+    
+}
+.packages-content-card{
+    position: relative;
+    top: -100px;
+}
+.hero-packages-content{
+    padding-block: 3rem;
 }
 }
